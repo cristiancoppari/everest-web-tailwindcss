@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<style>
+  .a{
+    fill:none;
+    stroke-width:4;
+    stroke:#A09028;
+  }
+</style>
+    <circle cx="60" cy="60" r="59.7" fill="#373737"/>
+    <line x1="36.4" y1="60" x2="83.6" y2="60" class="a"/>
+    <line x1="60" y1="83.6" x2="60" y2="36.4" class="a"/>
+</svg>
