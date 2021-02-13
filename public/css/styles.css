@@ -32371,6 +32371,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/****** HEADER STYLING ******/
+
 header {
   background: url("../images/photos/render-home.webp");
 }
@@ -32408,7 +32410,7 @@ header .navbar.fixed-top a{
 
 header .navbar.fixed-top span {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgba(146, 131, 30, var(--tw-bg-opacity));
 }
 
 header .navbar.fixed-top span:hover{
@@ -32430,6 +32432,8 @@ header .social-icons a {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
+/****** SECTIONS ******/
 
 .section-card .title {
   top: 50%;
@@ -32463,8 +32467,34 @@ header .social-icons a {
   text-shadow: 0px 0px 20px #000000;
 }
 
+/* .section-qualities .button-download-container img {
+  height: 50px;
+} */
+
+.section-contact-us .photo-container {
+  background: url("../images/photos/render-form.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-contact-us .form-container form input {
+  border-bottom: 1px black solid;
+}
+
+.section-contact-us .form-container form textarea {
+  border: 1px black solid;
+}
+
+/****** MEDIA QUERIES ******/
+
+/* @screen md {
+  .section-qualities img {
+    height: 80px;
+  }
+} */
+
 @media (min-width: 1536px) {
-  .section-apartments img {
+  .section-apartments .button-download-container img {
     max-width: 85%;
   }
 }
