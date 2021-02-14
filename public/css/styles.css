@@ -11962,6 +11962,42 @@ video {
   font-weight: 900;
 }
 
+.hover\:font-thin:hover{
+  font-weight: 100;
+}
+
+.hover\:font-extralight:hover{
+  font-weight: 200;
+}
+
+.hover\:font-light:hover{
+  font-weight: 300;
+}
+
+.hover\:font-normal:hover{
+  font-weight: 400;
+}
+
+.hover\:font-medium:hover{
+  font-weight: 500;
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600;
+}
+
+.hover\:font-bold:hover{
+  font-weight: 700;
+}
+
+.hover\:font-extrabold:hover{
+  font-weight: 800;
+}
+
+.hover\:font-black:hover{
+  font-weight: 900;
+}
+
 .h-0{
   height: 0px;
 }
@@ -32390,22 +32426,22 @@ header .navbar.fixed-top .navbar-list {
   top: 4rem;
 }
 
-header .navbar.fixed-top a {
+header .navbar.fixed-top .navbar-list-item {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
-header .navbar.fixed-top a:hover{
+header .navbar.fixed-top .navbar-list-item:hover{
   --tw-text-opacity: 1;
   color: rgba(146, 131, 30, var(--tw-text-opacity));
 }
 
-header .navbar.fixed-top a{
+header .navbar.fixed-top .navbar-list-item{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  transition-duration: 100ms;
+  transition-duration: 200ms;
 }
 
 header .navbar.fixed-top span {
@@ -32427,10 +32463,28 @@ header .navbar.fixed-top span{
 }
 
 header .social-icons a {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+header .navbar.fixed-top .social-icons a {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+header .navbar.fixed-top .social-icons a:hover{
+  --tw-text-opacity: 1;
+  color: rgba(146, 131, 30, var(--tw-text-opacity));
+}
+
+header .navbar.fixed-top .social-icons a{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
 }
 
 /****** SECTIONS ******/
@@ -32485,6 +32539,10 @@ header .social-icons a {
   border: 1px black solid;
 }
 
+footer {
+  border-top: 2px black solid;
+}
+
 /****** MEDIA QUERIES ******/
 
 /* @screen md {
@@ -32513,6 +32571,8 @@ header .social-icons a {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   height: 5rem;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px){
@@ -43785,6 +43845,42 @@ header .social-icons a {
   }
 
   .sm\:font-black{
+    font-weight: 900;
+  }
+
+  .sm\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .sm\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .sm\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .sm\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .sm\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .sm\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .sm\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .sm\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .sm\:hover\:font-black:hover{
     font-weight: 900;
   }
 
@@ -75388,6 +75484,42 @@ header .social-icons a {
     font-weight: 900;
   }
 
+  .md\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .md\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .md\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .md\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .md\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .md\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .md\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .md\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .md\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
   .md\:h-0{
     height: 0px;
   }
@@ -106985,6 +107117,42 @@ header .social-icons a {
   }
 
   .lg\:font-black{
+    font-weight: 900;
+  }
+
+  .lg\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .lg\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .lg\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .lg\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .lg\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .lg\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .lg\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .lg\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .lg\:hover\:font-black:hover{
     font-weight: 900;
   }
 
@@ -138588,6 +138756,42 @@ header .social-icons a {
     font-weight: 900;
   }
 
+  .xl\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .xl\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .xl\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .xl\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .xl\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .xl\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .xl\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .xl\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .xl\:hover\:font-black:hover{
+    font-weight: 900;
+  }
+
   .xl\:h-0{
     height: 0px;
   }
@@ -170185,6 +170389,42 @@ header .social-icons a {
   }
 
   .\32xl\:font-black{
+    font-weight: 900;
+  }
+
+  .\32xl\:hover\:font-thin:hover{
+    font-weight: 100;
+  }
+
+  .\32xl\:hover\:font-extralight:hover{
+    font-weight: 200;
+  }
+
+  .\32xl\:hover\:font-light:hover{
+    font-weight: 300;
+  }
+
+  .\32xl\:hover\:font-normal:hover{
+    font-weight: 400;
+  }
+
+  .\32xl\:hover\:font-medium:hover{
+    font-weight: 500;
+  }
+
+  .\32xl\:hover\:font-semibold:hover{
+    font-weight: 600;
+  }
+
+  .\32xl\:hover\:font-bold:hover{
+    font-weight: 700;
+  }
+
+  .\32xl\:hover\:font-extrabold:hover{
+    font-weight: 800;
+  }
+
+  .\32xl\:hover\:font-black:hover{
     font-weight: 900;
   }
 

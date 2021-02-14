@@ -149,9 +149,9 @@ header .navbar.fixed-top .navbar-list {
   top: 4rem;
 }
 
-header .navbar.fixed-top a {
+header .navbar.fixed-top .navbar-list-item {
   @apply text-black;
-  @apply hover:text-gold-dark transition-all duration-100 ease-in;
+  @apply hover:text-gold-dark transition-all duration-200 ease-in;
 }
 
 header .navbar.fixed-top span {
@@ -160,8 +160,13 @@ header .navbar.fixed-top span {
 }
 
 header .social-icons a {
-  @apply text-3xl;
+  @apply text-base;
   @apply text-white;
+}
+
+header .navbar.fixed-top .social-icons a {
+  @apply text-black;
+  @apply hover:text-gold-dark transition-all duration-200 ease-in;
 }
 
 /****** SECTIONS ******/
@@ -214,6 +219,10 @@ header .social-icons a {
   border: 1px black solid;
 }
 
+footer {
+  border-top: 2px black solid;
+}
+
 /****** MEDIA QUERIES ******/
 
 /* @screen md {
@@ -238,4 +247,5 @@ header .social-icons a {
 .fixed-top {
   @apply bg-white;
   @apply h-20;
+  @apply shadow-2xl;
 }

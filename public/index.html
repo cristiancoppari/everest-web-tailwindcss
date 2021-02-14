@@ -19,77 +19,60 @@
     >
       <!-- Navbar -->
       <nav
-        class="navbar flex flex-wrap justify-between items-center h-24 w-screen fixed px-6 md:px-2 lg:px-12 transition-all duration-100 ease-in z-50"
+        class="navbar flex flex-wrap justify-between items-center h-24 w-screen fixed px-6 md:px-6 lg:px-12 transition-all duration-100 ease-in z-50"
       >
         <img src="./images/icons/logo-white.svg" alt="Logo" class="logo h-14" />
 
         <ul
           class="navbar-list flex flex-wrap justify-evenly items-center fixed h-screen w-1/2 flex-col bg-white transition-all duration-200 ease-linear md:static md:flex-row md:h-auto md:bg-transparent md:w-2/3"
         >
-          <li class="navbar-list-item p-2">
-            <a
-              href="#header"
-              class="text-black md:text-white hover:text-gold-dark transition-all ease-in duration-100 text-sm md:text-xs"
-              >EVEREST</a
-            >
+          <li
+            class="navbar-list-item p-2 text-black md:text-white transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs"
+          >
+            <a href="#header">EVEREST</a>
           </li>
-          <li class="navbar-list-item p-2">
-            <a
-              href="#building"
-              class="text-black md:text-white hover:text-gold-dark transition-all ease-in duration-100 text-sm md:text-xs"
-              >EDIFICIO</a
-            >
+          <li
+            class="navbar-list-item p-2 text-black md:text-white transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs"
+          >
+            <a href="#section-building">EDIFICIO</a>
           </li>
-          <li class="navbar-list-item p-2">
-            <a
-              href="#apartments"
-              class="text-black md:text-white hover:text-gold-dark transition-all ease-in duration-100 text-sm md:text-xs"
-              >APARTAMENTOS</a
-            >
+          <li
+            class="navbar-list-item p-2 text-black md:text-white transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs"
+          >
+            <a href="#apartments">APARTAMENTOS</a>
           </li>
-          <li class="navbar-list-item p-2">
-            <a
-              href="#qualities"
-              class="text-black md:text-white hover:text-gold-dark transition-all ease-in duration-100 text-sm md:text-xs"
-              >CALIDADES</a
-            >
+          <li
+            class="navbar-list-item p-2 text-black md:text-white transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs"
+          >
+            <a href="#qualities">CALIDADES</a>
           </li>
-          <li class="navbar-list-item p-2">
-            <a
-              href="#lifestyle"
-              class="text-white hover:text-gold-dark transition-all ease-in duration-100 text-sm md:text-xs"
-              >ESTILO DE VIDA</a
-            >
+          <li
+            class="navbar-list-item p-2 text-black md:text-white transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs"
+          >
+            <a href="#lifestyle">ESTILO DE VIDA</a>
           </li>
         </ul>
 
         <div
           class="social-icons hidden md:relative md:flex md:flex-wrap md:items-center"
         >
-          <a href="#">
-            <!-- <img
-              src="./images/icons/facebook-white.svg"
-              alt="Facebook - Everest"
-              class="h-8 w-8 p-2"
-            /> -->
+          <a
+            href="https://www.facebook.com"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+          >
             <i class="icon-facebook-white"></i>
           </a>
-          <a href="#">
-            <!-- <img
-              src="./images/icons/instagram-white.svg"
-              alt="Instagram - Everest"
-              class="h-8 w-8 p-2"
-            /> -->
+          <a
+            href="https://www.instagram.com"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+          >
             <i class="icon-instagram-white"></i>
           </a>
-          <a href="#">
-            <!-- <img
-              src="./images/icons/linkedin-white.svg"
-              alt="LinkedIn - Everest"
-              src="./images/icons/facebook-white.svg"
-              class="h-8 w-8 p-2"
-            /> -->
-            <i class="icon-linkedin-white"></i>
+          <a
+            href="https://www.linkedin-com"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+          >
+            <i class="icon-linkedin-white ml-1"></i>
           </a>
         </div>
 
@@ -103,9 +86,9 @@
 
     <main class="main">
       <section
-        class="introduction-section py-28 px-12 bg-gray-light text-center"
+        class="section-introduction py-36 px-12 bg-gray-light text-center"
       >
-        <div class="introduction-section-wrapper">
+        <div class="section-introduction-wrapper">
           <div class="titles-wrapper">
             <h2 class="text-3xl mb-2 font-serif">EVEREST ANDORRA</h2>
             <h3 class="text-gold-dark mb-8">
@@ -129,7 +112,7 @@
       </section>
 
       <section
-        class="building-section text-center bg-gray-lighter py-28 px-12 md:px-28"
+        class="building-section text-center bg-gray-lighter py-36 px-12 md:p-36"
         id="building"
       >
         <div class="building-section-wrapper">
@@ -170,10 +153,10 @@
       </section>
 
       <section
-        class="section-apartments grid grid-cols-1 py-28 lg:grid-cols-2 lg:gap-x-10 xl:p-28 lg:items-center container mx-auto"
+        class="section-apartments grid grid-cols-1 py-36 lg:px-12 lg:grid-cols-2 lg:gap-x-12 lg:items-center"
         id="apartments"
       >
-        <article class="apartments-section-info px-12 md:p-0">
+        <article class="apartments-section-info px-12 md:px-12">
           <div class="side-1">
             <h2 class="text-3xl mb-8 font-serif">LOS APARTAMENTOS</h2>
             <p class="mb-6 font-light text-justify leading-9">
@@ -199,7 +182,7 @@
         <img
           src="./images/photos/render-apartments.webp"
           alt="Los apartamentos Everest Andorra"
-          class="p-12 justify-self-center lg:p-0 lg:max-w-full"
+          class="p-12 justify-self-center lg:max-w-full"
         />
         <!-- <a href="#" class="test"> </a> -->
       </section>
@@ -250,7 +233,7 @@
       </section>
 
       <section
-        class="section-icons grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-24 justify-items-center text-center bg-gray-light p-28"
+        class="section-icons grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-24 justify-items-center text-center bg-gray-light py-28 px-6 md:p-28"
         id="section-icons"
       >
         <article class="icon-card">
@@ -258,7 +241,7 @@
           <img
             src="./images/icons/borde-building.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             16 apartamentos únicos <br />
@@ -268,7 +251,11 @@
 
         <article class="icon-card">
           <!-- <i class="icon-hand text-gold-icons text-9xl block mb-9"></i> -->
-          <img src="./images/icons/hand.svg" alt="" class="mx-auto h-24 mb-9" />
+          <img
+            src="./images/icons/hand.svg"
+            alt=""
+            class="mx-auto h-14 md:h-16 mb-9"
+          />
           <h4>
             Calidad y <br />
             experiencia
@@ -280,7 +267,7 @@
           <img
             src="./images/icons/borde-cellphone.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             Luxury Digital <br />
@@ -293,7 +280,7 @@
           <img
             src="./images/icons/mountain.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             País de los <br />
@@ -306,7 +293,7 @@
           <img
             src="./images/icons/borde-print.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             Privacidad y <br />
@@ -319,7 +306,7 @@
           <img
             src="./images/icons/diamond.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             Elegancia y <br />
@@ -332,7 +319,7 @@
           <img
             src="./images/icons/cortado-abajo-star.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             Enclave <br />
@@ -345,7 +332,7 @@
           <img
             src="./images/icons/world.svg"
             alt=""
-            class="mx-auto h-24 mb-9"
+            class="mx-auto h-14 md:h-16 mb-9"
           />
           <h4>
             Diseño <br />
@@ -469,7 +456,7 @@
           <img
             src="./images/icons/logo-gold.svg"
             alt="Alonso Malaguer Arquitects Associats"
-            class="mb-10 md:mb-0"
+            class="mb-10 lg:mb-0"
           />
           <img
             src="./images/icons/logo-gold.svg"
@@ -479,38 +466,32 @@
       </section>
 
       <section
-        class="section-contact-us bg-white py-28 px-12 xl:p-28"
+        class="section-contact-us bg-white py-28 px-8 xl:p-28"
         id="section-contact-us"
       >
         <div
-          class="button-download-container w-max mb-28 mx-auto flex flex-wrap flex-col items-center md:flex-row"
+          class="button-download-container w-max mb-12 mx-auto flex flex-wrap flex-col items-center md:flex-row"
         >
           <img
             src="./images/icons/button.svg"
             alt="Ver ubicación"
-            class="photo inline-block h-12 mb-4 md:mr-4 md:mb-0 md:h-24"
+            class="photo inline-block h-12 mb-4 md:mr-4 md:mb-0 md:h-16"
           />
           <span class="font-serif text-2xl text-gold-dark mb-6 md:mb-0"
             >VER UBICACIÓN</span
           >
         </div>
 
-        <h4 class="font-serif text-gold-dark text-center mb-12 text-xl">
+        <h2 class="font-serif text-gold-dark text-center mb-12 text-xl">
           Si desea recibir más información sobre este exclusivo proyecto o
           resolver cualquier duda, déjenos sus datos y con mucho gusto nos
           pondremos en contacto con usted.
-        </h4>
+        </h2>
 
         <div class="form-container grid grid-cols-1 border md:grid-cols-2">
-          <div class="photo-container w-full h-96 md:h-full">
-            <!-- <img
-              src="./images/photos/render-form.webp"
-              alt="Consultanos ahora - Everest Andorra"
-              class="w-48 h-48 object-cover"
-            /> -->
-          </div>
+          <div class="photo-container w-full h-96 md:h-full"></div>
 
-          <form action="#" method="POST" class="p-12">
+          <form action="#" method="POST" class="p-8">
             <div
               class="input-group grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-4 md:gap-y-4 lg:gap-x-20 lg:gap-y-8"
             >
@@ -586,19 +567,47 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="address">
-        <p>C / BisbePrincepIglesias, 1 / AvingudaMeritxell</p>
-        <p>AD500 Andorra La Vella</p>
-        <p>+376 333 233</p>
+    <footer
+      class="footer w-5/6 mx-auto flex flex-wrap justify-between items-center py-8"
+    >
+      <div
+        class="footer-info-container flex flex-wrap flex-col text-center sm:text-left"
+      >
+        <div class="address text-gold-dark italic font-light mb-6">
+          <p class="leading-9 text-sm">
+            C / BisbePrincepIglesias, 1 / AvingudaMeritxell
+          </p>
+          <p class="leading-9 text-sm">AD500 Andorra La Vella</p>
+          <p class="leading-9 text-sm">+376 333 233</p>
+        </div>
+        <div
+          class="social-icons relative flex flex-wrap items-center justify-center sm:justify-start mb-6 md:mx-0"
+        >
+          <a
+            href="https://www.facebook.com/"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+          >
+            <i class="icon-facebook-white"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+          >
+            <i class="icon-instagram-white"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+          >
+            <i class="icon-linkedin-white ml-1"></i>
+          </a>
+        </div>
       </div>
-      <div class="footer__social-icons">
-        <img src="" alt="Facebook - Everest" />
-        <img src="" alt="Instagram - Everest" />
-        <img src="" alt="LinkedIn - Everest" />
-      </div>
-      <h2>EVEREST</h2>
-      <h3>EXCLUSIVE HOMES</h3>
+      <img
+        src="./images/icons/logo-gold.svg"
+        alt="Logo"
+        class="logo h-24 mx-auto sm:mx-0"
+      />
     </footer>
   </body>
 
