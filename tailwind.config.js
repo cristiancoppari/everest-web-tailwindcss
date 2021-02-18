@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     mode: "layers",
-    content: ["./public/**/*.html"],
+    content: ["./**/*.html"],
     options: {
       keyframes: true,
     },

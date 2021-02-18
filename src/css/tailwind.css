@@ -130,6 +130,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tracking-widest;
+}
+
 /****** HEADER STYLING ******/
 
 header {
@@ -141,15 +150,21 @@ header .navbar {
 }
 
 header .navbar .navbar-list {
-  top: 6rem;
+  top: 0rem;
   right: -50%;
 }
 
 header .navbar.fixed-top .navbar-list {
-  top: 4rem;
+  top: 0rem;
 }
 
-header .navbar.fixed-top .navbar-list-item {
+header .navbar .navbar-list.active ~ .burger .line-1,
+header .navbar .navbar-list.active ~ .burger .line-2,
+header .navbar .navbar-list.active ~ .burger .line-3 {
+  background-color: black;
+}
+
+header .navbar.fixed-top .navbar-list-item a {
   @apply text-black;
   @apply hover:text-gold-dark transition-all duration-200 ease-in;
 }
@@ -205,22 +220,34 @@ header .navbar.fixed-top .social-icons a {
   height: 50px;
 } */
 
-.section-contact-us .photo-container {
+.photo-container {
   background: url("../images/photos/render-form.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.section-contact-us .form-container form input {
+.form-container form input {
   border-bottom: 1px black solid;
 }
 
-.section-contact-us .form-container form textarea {
+.form-container form textarea {
   border: 1px black solid;
 }
 
 footer {
   border-top: 2px black solid;
+}
+
+.button-right {
+  top: 50%;
+  right: -233px;
+  opacity: 0;
+}
+
+/****** Lightboxes ******/
+.lightbox-active {
+  @apply opacity-100 !important;
+  @apply flex !important;
 }
 
 /****** MEDIA QUERIES ******/
@@ -241,6 +268,15 @@ footer {
 /* Navbar */
 .active {
   right: 0 !important;
+  @apply shadow-2xl;
+}
+
+.button-active {
+  right: 0 !important;
+}
+
+.button-show {
+  opacity: 1;
 }
 
 /* Navbar Sticky when scrolling down certain point */
