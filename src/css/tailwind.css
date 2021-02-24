@@ -10,6 +10,7 @@
     url("../font/fontello.svg?42547138#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -240,7 +241,7 @@ footer {
 
 .button-right {
   top: 50%;
-  right: -233px;
+  right: -220px;
   opacity: 0;
 }
 
@@ -282,6 +283,5 @@ footer {
 /* Navbar Sticky when scrolling down certain point */
 .fixed-top {
   @apply bg-white;
-  @apply h-20;
   @apply shadow-2xl;
 }

@@ -41,6 +41,9 @@ module.exports = {
         sans: "Montserrat",
         serif: "DM Serif Display",
       },
+      maxWidth: {
+        image: "500px",
+      },
     },
   },
   variants: {

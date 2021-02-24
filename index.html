@@ -9,6 +9,22 @@
     />
     <title>Everest Andorra | Edificio Exclusivo de Obra Nueva en Andorra</title>
     <meta name="robots" content="index" />
+    
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="PG3vMsb828wxsW1n_FI6OyPr7_CZ7-sIYebgIfkyv08" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYQ5PQMV97"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YYQ5PQMV97');
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9426891.js"></script>
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -34,10 +50,10 @@
     ></script>
 
     <!-- Preload styles and scripts -->
-    <link rel="preload" href="/public/css/styles.css" as="style" />
-    <link rel="preload" href="/public/javascript/app.js" as="script" />
-    <link rel="preload" href="/public/javascript/gsap.js" as="script" />
-    <link rel="preload" href="/public/javascript/lightbox.js" as="script" />
+    <link rel="preload" href="./public/css/styles.css" as="style" />
+    <link rel="preload" href="./public/javascript/app.js" as="script" />
+    <link rel="preload" href="./public/javascript/gsap.js" as="script" />
+    <link rel="preload" href="./public/javascript/lightbox.js" as="script" />
 
     <!-- Fonts and Fontawesome -->
     <link
@@ -54,10 +70,10 @@
     ></script>
 
     <!-- Scripts and styles -->
-    <script src="/public/javascript/app.js" defer></script>
-    <script src="/public/javascript/gsap.js" defer></script>
-    <script src="/public/javascript/lightbox.js" defer></script>
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <script src="./public/javascript/app.js" defer></script>
+    <script src="./public/javascript/gsap.js" defer></script>
+    <script src="./public/javascript/lightbox.js" defer></script>
+    <link rel="stylesheet" href="./public/css/styles.css" />
 
     <title>EVEREST Andorra</title>
   </head>
@@ -70,50 +86,50 @@
     >
       <!-- Navbar -->
       <nav
-        class="navbar flex flex-wrap justify-between items-center h-24 w-screen fixed px-6 md:px-6 lg:px-12 transition-all duration-100 ease-in z-50"
+        class="navbar flex flex-wrap justify-between py-4 items-center w-screen fixed px-6 md:px-6 lg:px-12 transition-all duration-100 ease-in z-50 fixed-top"
       >
-        <a href="#header">
+        <a href="/">
           <img
-            src="/public/images/icons/logo-white.svg"
+            src="./public/images/icons/logo-gold.svg"
             alt="Logo"
-            class="logo h-14"
+            class="logo h-20"
           />
         </a>
 
         <ul
-          class="navbar-list flex flex-wrap justify-evenly items-center fixed h-full w-1/2 flex-col bg-white transition-all duration-200 ease-linear md:static md:flex-row md:h-auto md:bg-transparent md:w-2/3"
+          class="navbar-list flex flex-wrap justify-evenly items-center fixed h-full w-1/2 flex-col bg-white transition-all duration-200 ease-linear lg:static lg:flex-row lg:h-auto lg:bg-transparent lg:w-2/3"
         >
           <li class="navbar-list-item p-2 text-black md:text-white">
             <a
-              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs inline-block"
+              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-base inline-block"
               href="#section-introduction"
               >EVEREST</a
             >
           </li>
           <li class="navbar-list-item p-2 text-black md:text-white">
             <a
-              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs inline-block"
+              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-base inline-block"
               href="#section-building"
               >EDIFICIO</a
             >
           </li>
           <li class="navbar-list-item p-2 text-black md:text-white">
             <a
-              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs inline-block"
+              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-base inline-block"
               href="#section-apartments"
               >APARTAMENTOS</a
             >
           </li>
           <li class="navbar-list-item p-2 text-black md:text-white">
             <a
-              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs inline-block"
+              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-base inline-block"
               href="#section-qualities"
               >CALIDADES</a
             >
           </li>
           <li class="navbar-list-item p-2 text-black md:text-white">
             <a
-              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-sm md:text-xs inline-block"
+              class="transform hover:font-bold hover:-translate-y-1 transition-all ease-in duration-100 text-base inline-block"
               href="#section-lifestyle"
               >ESTILO DE VIDA</a
             >
@@ -121,30 +137,33 @@
         </ul>
 
         <div
-          class="social-icons hidden md:relative md:flex md:flex-wrap md:items-center"
+          class="social-icons hidden lg:relative lg:flex lg:flex-wrap lg:items-center"
         >
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/Everest-Andorra-109653287830416"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+            target="_blank"
           >
             <i class="icon-facebook-white"></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/everestandorra"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+            target="_blank"
           >
             <i class="icon-instagram-white"></i>
           </a>
           <a
             href="https://www.linkedin.com/company/everestandorra"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100"
+            target="_blank"
           >
             <i class="icon-linkedin-white ml-1"></i>
           </a>
         </div>
 
         <div
-          class="burger block cursor-pointer z-10 md:hidden transition-all duration-100 ease-in"
+          class="burger block cursor-pointer z-10 lg:hidden transition-all duration-100 ease-in"
         >
           <span class="line-1 block h-1 w-10 bg-white"></span>
           <span class="line-2 block h-1 w-10 bg-white my-2"></span>
@@ -152,15 +171,15 @@
         </div>
       </nav>
 
-      <a
+      <button
         class="icon-play-container inline-block absolute top-1/2 left-1/2 cursor-pointer transform -translate-x-1/2 -translate-y-1/2"
       >
         <img
-          src="/public/images/icons/play.svg"
+          src="./public/images/icons/play.svg"
           alt="Mira nuestro video - Everest Andorra"
-          class="h-28"
+          class="h-28 icon-play"
         />
-      </a>
+      </button>
     </header>
 
     <!-- Main -->
@@ -223,15 +242,20 @@
             quien representan.
           </p>
         </div>
-        <a href="#" class="view-360 inline-block link-anim">
-          <span class="text-gold-lighter block mt-24 mb-8"
-            >CLICK PARA LA VISTA 360º</span
-          >
+        
+        <a
+          class="button-download-container w-max mx-auto mt-28 flex flex-wrap flex-col items-center md:flex-row cursor-pointer"
+          href="./public/pdf/dossier-everest.pdf"
+          download
+        >
           <img
-            src="/public/images/icons/360.svg"
-            alt="Vista 360 de Everest Andorra"
-            class="mx-auto"
+            src="./public/images/icons/button.svg"
+            alt="Descargá el dossier comercial"
+            class="inline-block h-12 md:h-24 mb-4 md:mr-4 md:mb-0"
           />
+          <span class="font-serif text-2xl text-gold-dark w-2/3 md:w-max"
+            >DESCARGAR DOSSIER</span
+          >
         </a>
       </section>
 
@@ -266,7 +290,7 @@
           </div>
         </article>
         <img
-          src="/public/images/photos/render-apartments.webp"
+          src="./public/images/photos/render-apartments.webp"
           alt="Los apartamentos Everest Andorra"
           class="img-anim p-12 justify-self-center lg:max-w-full"
         />
@@ -279,7 +303,7 @@
       >
         <div class="image terrace relative">
           <img
-            src="/public/images/photos/terrace-small.webp"
+            src="./public/images/photos/terrace-small.webp"
             alt="Terraza Everest Andorra"
             class="transition-all duration-300 ease-in-out"
           />
@@ -291,7 +315,7 @@
         </div>
         <div class="image building relative">
           <img
-            src="/public/images/photos/facade-small.webp"
+            src="./public/images/photos/facade-small.webp"
             alt="Fachada Everest Andorra"
             class="transition-all duration-300 ease-in-out"
           />
@@ -303,7 +327,7 @@
         </div>
         <div class="image parking relative">
           <img
-            src="/public/images/photos/parking-small.webp"
+            src="./public/images/photos/parking-small.webp"
             alt="Parking Everest Andorra"
             class="transition-all duration-300 ease-in-out"
           />
@@ -323,7 +347,7 @@
         <article class="icon-card">
           <!-- <i class="icon-building text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/borde-building.svg"
+            src="./public/images/icons/borde-building.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -336,7 +360,7 @@
         <article class="icon-card">
           <!-- <i class="icon-hand text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/hand.svg"
+            src="./public/images/icons/hand.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -349,7 +373,7 @@
         <article class="icon-card">
           <!-- <i class="icon-cellphone text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/borde-cellphone.svg"
+            src="./public/images/icons/borde-cellphone.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -362,7 +386,7 @@
         <article class="icon-card">
           <!-- <i class="icon-mountain text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/mountain.svg"
+            src="./public/images/icons/mountain.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -375,7 +399,7 @@
         <article class="icon-card">
           <!-- <i class="icon-print text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/borde-print.svg"
+            src="./public/images/icons/borde-print.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -388,7 +412,7 @@
         <article class="icon-card">
           <!-- <i class="icon-diamond text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/diamond.svg"
+            src="./public/images/icons/diamond.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -401,7 +425,7 @@
         <article class="icon-card">
           <!-- <i class="icon-star text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/cortado-abajo-star.svg"
+            src="./public/images/icons/cortado-abajo-star.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -414,7 +438,7 @@
         <article class="icon-card">
           <!-- <i class="icon-world text-gold-icons text-9xl block mb-9"></i> -->
           <img
-            src="/public/images/icons/world.svg"
+            src="./public/images/icons/world.svg"
             alt=""
             class="mx-auto h-14 md:h-16 mb-9"
           />
@@ -434,7 +458,7 @@
           CALIDADES
         </h2>
         <img
-          src="/public/images/photos/render-bedroom.webp"
+          src="./public/images/photos/photo-kitchen.webp"
           alt="Calidades - Everest Andorra"
           class="img-anim"
         />
@@ -470,18 +494,20 @@
           comunicación, etc.)
         </p>
 
-        <div
-          class="button-download-container w-max mx-auto mt-28 flex flex-wrap flex-col items-center md:flex-row cursor-pointer"
+        <a
+          class="button-download-container mt-28 flex flex-wrap flex-col items-center justify-center md:flex-row cursor-pointer"
+          href="./public/pdf/memoria-de-calidades-everest.pdf"
+          download
         >
           <img
-            src="/public/images/icons/button.svg"
+            src="./public/images/icons/button.svg"
             alt="Descargá el dossier comercial"
             class="inline-block h-12 md:h-24 mb-4 md:mr-4 md:mb-0"
           />
-          <span class="font-serif text-2xl text-gold-dark"
-            >DESCARGA EL DOSSIER</span
+          <span class="font-serif text-2xl text-gold-dark text-center"
+            >DESCARGAR MEMORIA DE CALIDADES</span
           >
-        </div>
+        </a>
       </section>
 
       <!-- Lifestyle Section -->
@@ -512,7 +538,7 @@
         </p>
 
         <img
-          src="/public/images/photos/render-bedroom.webp"
+          src="./public/images/photos/collage.webp"
           alt="Estilo de vida - Everest Andorra"
           class="img-anim block"
         />
@@ -556,12 +582,12 @@
           class="img-anim international-design-icons flex flex-wrap w-full justify-evenly"
         >
           <img
-            src="/public/images/icons/logo-abaa.svg"
+            src="./public/images/icons/logo-abaa.svg"
             alt="Alonso Malaguer Arquitects Associats"
             class="mb-10 lg:mb-0 h-28"
           />
           <img
-            src="/public/images/icons/logo-pcc.svg"
+            src="./public/images/icons/logo-pcc.svg"
             alt="Pere Cervós Cardona - Estudio de Arquitectura y Urbanismo"
             class="h-28"
           />
@@ -573,18 +599,18 @@
         class="section-contact-us bg-white py-28 px-8 xl:p-28"
         id="section-contact-us"
       >
-        <div
-          class="button-download-container w-max mb-12 mx-auto flex flex-wrap flex-col items-center md:flex-row cursor-pointer"
+        <button
+          class="button-view-location w-max mb-12 mx-auto flex flex-wrap flex-col items-center md:flex-row cursor-pointer"
         >
           <img
-            src="/public/images/icons/button.svg"
+            src="./public/images/icons/button.svg"
             alt="Ver ubicación"
             class="photo inline-block h-12 mb-4 md:mr-4 md:mb-0 md:h-16"
           />
           <span class="font-serif text-2xl text-gold-dark mb-6 md:mb-0"
             >VER UBICACIÓN</span
           >
-        </div>
+        </button>
 
         <h2 class="font-serif text-gold-dark text-center mb-12 text-xl">
           Si desea recibir más información sobre este exclusivo proyecto o
@@ -660,7 +686,7 @@
               class="button-form-container w-max mx-auto mt-12 flex flex-wrap flex-col items-center md:flex-row"
             >
               <img
-                src="/public/images/icons/button.svg"
+                src="./public/images/icons/button.svg"
                 alt="Ver ubicación"
                 class="inline-block h-12 mb-4 md:mr-4 md:mb-0"
               />
@@ -689,27 +715,30 @@
           class="social-icons relative flex flex-wrap items-center justify-center sm:justify-start mb-6 md:mx-0"
         >
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/Everest-Andorra-109653287830416"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+            target="_blank"
           >
             <i class="icon-facebook-white"></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/everestandorra"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+            target="_blank"
           >
             <i class="icon-instagram-white"></i>
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/everestandorra"
             class="transform hover:-translate-y-1 transition-all ease-in duration-100 text-gold-dark text-2xl"
+            target="_blank"
           >
             <i class="icon-linkedin-white ml-1"></i>
           </a>
         </div>
       </div>
       <img
-        src="/public/images/icons/logo-gold.svg"
+        src="./public/images/icons/logo-gold.svg"
         alt="Logo"
         class="logo h-24 mx-auto sm:mx-0"
       />
@@ -743,7 +772,7 @@
     >
       <div class="lightbox-content relative w-4/5">
         <img
-          src="/public/images/photos/terrace-big.webp"
+          src="./public/images/photos/terrace.webp"
           alt="Terraza Everest"
           class="mx-auto terrace-img"
         />
@@ -752,13 +781,14 @@
         ></i>
       </div>
     </div>
+
     <!-- Fachada Lightbox -->
     <div
       class="lightbox w-screen h-screen fixed top-0 left-0 flex flex-wrap justify-center items-center bg-black bg-opacity-90 z-50 hidden p-12"
     >
-      <div class="lightbox-content relative max-w-screen-sm">
+      <div class="lightbox-content relative max-w-image">
         <img
-          src="/public/images/photos/facade-big.webp"
+          src="./public/images/photos/facade-big.webp"
           alt="Terraza Everest"
           class="mx-auto fachada-img"
         >
@@ -768,13 +798,14 @@
         ></i>
       </div>
     </div>
+
     <!-- Parking Lightbox -->
     <div
       class="lightbox w-screen h-screen fixed top-0 left-0 flex flex-wrap justify-center items-center bg-black bg-opacity-90 z-50 hidden"
     >
       <div class="lightbox-content relative w-4/5">
         <img
-          src="/public/images/photos/parking-big.webp"
+          src="./public/images/photos/parking-big.webp"
           alt="Terraza Everest"
           class="mx-auto parking-img"
         />
@@ -863,7 +894,7 @@
               class="button-form-container w-max mx-auto mt-12 flex flex-wrap flex-col items-center md:flex-row"
             >
               <img
-                src="/public/images/icons/button.svg"
+                src="./public/images/icons/button.svg"
                 alt="Ver ubicación"
                 class="inline-block h-12 mb-4 md:mr-4 md:mb-0"
               />
@@ -874,6 +905,42 @@
 
         <i
           class="modal-close fas fa-times-circle absolute -top-6 -right-6 text-white cursor-pointer"
+        ></i>
+      </div>
+    </div>
+    
+    <!-- Video 1 modal -->
+    <div
+      class="modal-video w-screen h-screen fixed top-0 left-0 flex flex-wrap justify-center items-center bg-black bg-opacity-90 z-50 py-12 hidden"
+    >
+      <div class="lightbox-content relative h-2/3 w-5/6">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/YhpQGpN1Kdw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+        <i
+          class="video-close fas fa-times-circle absolute -top-6 -right-6 text-white cursor-pointer"
+        ></i>
+      </div>
+    </div>
+    
+    <!-- Location modal -->
+    <!-- <div
+      class="location-modal w-screen h-screen fixed top-0 left-0 flex flex-wrap justify-center items-center bg-black bg-opacity-90 z-50 py-12 hidden"
+    >
+      <div class="lightbox-content relative h-2/3 w-5/6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.3093281798092!2d1.522283729244398!3d42.50776459869859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a58ad3732a7db3%3A0xfa3fc37e5e28d9bb!2sAv.%20Meritxell%2C%201%2C%20AD500%20Andorra%20la%20Vella%2C%20Andorra!5e0!3m2!1ses-419!2sar!4v1613704512862!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <i
+          class="video-close fas fa-times-circle absolute -top-6 -right-6 text-white cursor-pointer"
+        ></i>
+      </div>
+    </div> -->
+    
+    <!-- Location modal 2 -->
+    <div
+      class="location-modal w-screen h-screen fixed top-0 left-0 flex flex-wrap justify-center items-center bg-black bg-opacity-90 z-50 py-12 hidden"
+    >
+      <div class="lightbox-content relative">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.3024931627488!2d1.525783004498887!3d42.50834565623402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a58ad17d5ad7e5%3A0x7fa4090f104d532b!2sCarrer%20Bisbe%20Pr%C3%ADncep%20Iglesias%2C%201%2C%20AD500%20Andorra%20la%20Vella%2C%20Andorra!5e0!3m2!1ses-419!2sar!4v1613705103098!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <i
+          class="location-close fas fa-times-circle absolute -top-6 -right-6 text-white cursor-pointer"
         ></i>
       </div>
     </div>

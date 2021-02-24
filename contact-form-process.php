@@ -2,7 +2,7 @@
 if (isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "home@everestandorra.com";
+    $email_to = "homes@everestandorra.com";
     $email_to_test = "cristian.coppari@gmail.com";
     $email_subject = "Nuevo contacto de Everest Andorra";
 
@@ -39,12 +39,20 @@ if (isset($_POST['email'])) {
 
     // $string_exp = "/^[A-Za-z .'-]+$/";
 
-    if (strlen($string_exp, $name)) {
+    if (strlen($name) < 2) {
         $error_message .= 'El nombre que ingresaste no parece válido. Por favor ingresa uno válido.<br>';
     }
 
     if (strlen($lastName) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+        $error_message .= 'El apellido que ingresaste no parece válido. Por favor ingresa uno válido.<br>';
+    }
+
+    if (strlen($phone) < 2) {
+        $error_message .= 'Por favor ingresa un número de teléfono válido.<br>';
+    }
+
+    if (strlen($message) < 2) {
+        $error_message .= 'Por favor ingresa un mensaje válido.<br>';
     }
 
     if (strlen($error_message) > 0) {
@@ -70,12 +78,11 @@ if (isset($_POST['email'])) {
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to_test, $email_subject, $email_message, $headers);
-?>
-
-    <!-- include your success message below -->
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
 }
+
+    Gracias por contactarse con nosotros. Un miembro de nuestro equipo se contactará con usted a la brevedad.
+
+/* header("Location: https://google.com/");
+die(); */
+
 ?>

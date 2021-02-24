@@ -26,26 +26,8 @@ window.addEventListener("load", () => {
     modalForm.classList.toggle("hidden");
   });
 
-  // Closing the Modal
-  /* closeModal.addEventListener("click", () => {
-    modalForm.classList.remove("hidden");
-  }); */
-
-  // Opening the lightbox
-  /* parking.addEventListener("click", (e) => {
-    lightBox.classList.remove("hidden");
-  }); */
-
-  // Closing the Lightbox
-  /* closeLightBox.addEventListener("click", () => {
-    lightBox.classList.add("hidden");
-  }); */
-
   // Sticky Navbar
   window.addEventListener("scroll", () => {
-    // Fixed Navbar
-    navbar.classList.toggle("fixed-top", window.scrollY > 50);
-
     // Button Right visible from tablet to desktop
     if (window.innerWidth >= 1024) {
       buttonRight.classList.toggle(
@@ -60,13 +42,5 @@ window.addEventListener("load", () => {
         window.scrollY > 772 && window.scrollY < 12375
       );
     }
-
-    if (window.scrollY > 50) {
-      logo.src = "/public/images/icons/logo-gold.svg";
-    } else {
-      logo.src = "/public/images/icons/logo-white.svg";
-    }
-
-    // console.log(window.scrollY);
   });
 });

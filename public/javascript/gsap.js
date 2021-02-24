@@ -9,32 +9,6 @@ window.addEventListener("load", () => {
 
   // Text animations
 
-  // Introduction
-  // Config
-  const introductionTL = gsap.timeline({
-    defaults: {
-      duration: 1,
-    },
-    scrollTrigger: {
-      trigger: ".section-introduction",
-      // markers: true,
-      start: "top center",
-      toggleActions: "restart none none paused",
-    },
-  });
-  // Animations
-  introductionTL
-    .from(".section-introduction .title-anim", {
-      opacity: 0,
-      y: -50,
-      stagger: 0.2,
-    })
-    .from(
-      ".section-introduction .paragraph-anim",
-      { opacity: 0, y: -50, stagger: 0.2 },
-      "-=.5"
-    );
-
   // Building
   // Config
   const buildingTL = gsap.timeline({
@@ -49,18 +23,10 @@ window.addEventListener("load", () => {
     },
   });
   // Animations
-  buildingTL
-    .from(".section-building .title-anim", {
-      opacity: 0,
-      y: -50,
-      stagger: 0.2,
-    })
-    .from(
-      ".section-building .paragraph-anim",
-      { opacity: 0, y: -50, stagger: 0.2 },
-      "-=.5"
-    )
-    .from(".section-building .link-anim", { opacity: 0, y: -50 });
+  buildingTL.from(".section-building .button-download-container", {
+    opacity: 0,
+    y: -50,
+  });
 
   // Apartments
   // Config
@@ -76,17 +42,11 @@ window.addEventListener("load", () => {
     },
   });
   // Animations
-  apartmentsTL
-    .from(".section-apartments .title-anim", {
-      opacity: 0,
-      x: -50,
-    })
-    .from(
-      ".section-apartments .paragraph-anim",
-      { opacity: 0, y: -50, stagger: 0.2 },
-      "-=.5"
-    )
-    .from(".section-apartments .img-anim", { opacity: 0, x: -50 }, "-=.5");
+  apartmentsTL.from(
+    ".section-apartments .img-anim",
+    { opacity: 0, x: -50 },
+    "-=.5"
+  );
 
   // Icons
   // Config
@@ -122,25 +82,14 @@ window.addEventListener("load", () => {
     },
   });
   // Animations
-  qualitiesTL
-    .from(".section-qualities .title-anim", {
-      opacity: 0,
-      y: -50,
-    })
-    .from(".section-qualities .img-anim", { opacity: 0, x: -50 }, "-=.5")
-    .from(
-      ".section-qualities .paragraph-anim",
-      { opacity: 0, y: -50, stagger: 0.2 },
-      "-=.5"
-    )
-    .from(".section-qualities .button-download-container", {
-      opacity: 0,
-      y: -50,
-    });
+  qualitiesTL.from(".section-qualities .button-download-container", {
+    opacity: 0,
+    y: -50,
+  });
 
   // Qualities
   // Config
-  const lifestyleTL = gsap.timeline({
+  /* const lifestyleTL = gsap.timeline({
     defaults: {
       duration: 1,
     },
@@ -162,11 +111,11 @@ window.addEventListener("load", () => {
       { opacity: 0, y: -50, stagger: 0.2 },
       "-=.5"
     )
-    .from(".section-lifestyle .img-anim", { opacity: 0, x: -50 }, "-=.5");
+    .from(".section-lifestyle .img-anim", { opacity: 0, x: -50 }, "-=.5"); */
 
   // International Design
   // Config
-  const internationalDesignTL = gsap.timeline({
+  /* const internationalDesignTL = gsap.timeline({
     defaults: {
       duration: 1,
     },
@@ -192,6 +141,6 @@ window.addEventListener("load", () => {
       ".section-international-design .img-anim",
       { opacity: 0, y: -50 },
       "-=.5"
-    );
+    ); */
   // Master Timelines
 });
