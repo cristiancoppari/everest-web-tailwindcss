@@ -43,6 +43,7 @@ module.exports = {
       },
       maxWidth: {
         image: "500px",
+        lightboxImage: "80%",
       },
     },
   },

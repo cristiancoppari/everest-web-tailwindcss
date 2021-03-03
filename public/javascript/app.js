@@ -8,12 +8,22 @@ window.addEventListener("load", () => {
   let burger = qs(".burger");
   let logo = qs(".logo");
   let emailAdress = qs(".email-adress");
+  let navLinks = document.querySelectorAll(
+    ".header .navbar .navbar-list-item a"
+  );
 
   let buttonRight = qs(".button-right");
 
   // Navbar Toggle
   burger.addEventListener("click", () => {
     navbarList.classList.toggle("active");
+  });
+
+  // Closing the navbar
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", () => {
+      navbarList.classList.toggle("active");
+    });
   });
 
   // Fixed Button Slide Effect

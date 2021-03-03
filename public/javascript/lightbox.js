@@ -5,15 +5,6 @@ window.addEventListener("load", () => {
 
   const closeLightBox = document.querySelectorAll(".lightbox-close");
 
-  images.forEach((image, i) => {
-    image.addEventListener("click", (e) => {
-      lightBoxes[i].classList.add("lightbox-active");
-    });
-    closeLightBox[i].addEventListener("click", () => {
-      lightBoxes[i].classList.remove("lightbox-active");
-    });
-  });
-
   /****** Modal Form ******/
   const modalForm = document.querySelector(".modal-form");
   const emailAdress = document.querySelector(".email-adress");
@@ -28,7 +19,7 @@ window.addEventListener("load", () => {
   });
 
   /******* Video 1 *******/
-  const playIcon = document.querySelector(".icon-play");
+  /* const playIcon = document.querySelector(".icon-play");
   const videoPopUp = document.querySelector(".modal-video");
   const closeVideo = document.querySelector(".video-close");
 
@@ -38,10 +29,10 @@ window.addEventListener("load", () => {
 
   closeVideo.addEventListener("click", () => {
     videoPopUp.classList.add("hidden");
-  });
+  }); */
 
   /******* Location *******/
-  const viewLocation = document.querySelector(".button-view-location");
+  /* const viewLocation = document.querySelector(".button-view-location");
   const locationPopUp = document.querySelector(".location-modal");
   const closeLocation = document.querySelector(".location-close");
 
@@ -51,5 +42,5 @@ window.addEventListener("load", () => {
 
   closeLocation.addEventListener("click", () => {
     locationPopUp.classList.add("hidden");
-  });
+  }); */
 });

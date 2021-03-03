@@ -269,7 +269,6 @@ footer {
 /* Navbar */
 .active {
   right: 0 !important;
-  @apply shadow-2xl;
 }
 
 .button-active {

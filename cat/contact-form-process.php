@@ -78,7 +78,7 @@ if (isset($_POST['email'])) {
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
-    header('Location: https://www.everestandorra.com/nuevositio/gracias.html');
+    header('Location: https://www.everestandorra.com/nuevositio/cat/gracies.html');
     exit();
     ?>
     <!-- Formulario enviado -->
